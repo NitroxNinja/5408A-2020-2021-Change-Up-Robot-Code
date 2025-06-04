@@ -5,7 +5,7 @@ This is a good idea!
 
 ## Leeks
 
-- Final Robot, [here]((https://youtu.be/jCB5BBPnRsI?si=fzbcM1_utrkYH1Rt))
+- Final Robot, [here](https://youtu.be/jCB5BBPnRsI?si=fzbcM1_utrkYH1Rt)
   
 ![image](https://github.com/user-attachments/assets/6dcbbf7d-8923-402e-9389-6e9f2b84dc5f)
 
