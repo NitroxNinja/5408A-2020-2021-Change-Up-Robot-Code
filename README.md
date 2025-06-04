@@ -18,7 +18,7 @@ This is a good idea!
 
 This code has been in development since 2019, when I first started to learn how to program. What motivated me to make this code, was the lack of an autonomous system for my Tower Takeover Robot (you can see the gallery in orbiterAll repository in Gallery.md), and most espicially the COVID-19 in 2020, which sort of forced me to be stuck at home learning a whole bunch of things. This represents a platform of how I started to program and how this led to a very successful robot even before all the fancy schmancy libraries that provided the answers for you. This features the usage of IMU and 2 lateral tracking wheels. To start, just download `finalDynamoProject.v5code` into your editor (like VEXcode PRO on Visual Studio Code) with all the correct files and header files, although I don't intend for you to take from this code and write your own, use it to inspire you perhaps. (I'm mostly writing this for historical purposes). 
 
-I did do a little experimentation on a full 3 tracking wheel + IMU system, and I believe you could see some remnants of it in this code, but I may have deleted everything. 
+I did do a little experimentation on a full 3 tracking wheel + IMU system, and I believe you could see some remnants of it in this code, but I may have deleted everything. For that I highly suggest you see this [video](https://youtu.be/TaS1VLPnMkE?si=fAOMFlZCVeE3Egpx)
 
 ## Driver-focused 
 
