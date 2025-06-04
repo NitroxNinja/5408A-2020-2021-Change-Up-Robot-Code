@@ -5,8 +5,12 @@ This is a good idea!
 
 ## Leeks
 
+- Final Robot
+  
 ![image](https://github.com/user-attachments/assets/6dcbbf7d-8923-402e-9389-6e9f2b84dc5f)
 
+- Prototype
+  
 ![image](https://github.com/user-attachments/assets/90a4520b-b973-45de-aac4-f27b19be6378)
 
 
