@@ -26,7 +26,7 @@ There is also very little drive macros and automated tasks. **This is a driver's
 
 Out of all the robots I've made, this robot had the worst handling. This was mostly due to the center of gravity of this robot being shifted too far forward, and the weight was perhaps a little too much for the 4 motor 2.57" omni+traction drive. But regardless it beat out my division and almost won the 2021 Texas State Championship had my partner not stalled their program. 
 
-Pooper mode is perhaps one of the few tasks in which I included some automation, espicially in regards to line sensors. It essentially acts as a way for me to intake and hold balls in the big blue/red rubber band wheel, but if I want to discard that ball in the rear of my robot, I press a button and intake, and press back to do so, vice versa. 
+Pooper mode or `indexSystem()` in `opControl` is perhaps one of the few tasks in which I included some automation, espicially in regards to line sensors. It essentially acts as a way for me to intake and hold balls in the big blue/red rubber band wheel, but if I want to discard that ball in the rear of my robot, I press a button and intake, and press back to do so, vice versa. 
 
 ## Some files
 
