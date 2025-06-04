@@ -44,7 +44,21 @@ If you go to the autonomous function of the code, you may notice that I turn "on
 ### i. How to use this code
 '`dV`' and '`dTV`' are short for "desiredValue" and "desiredTurnValue" respectively. The reason why I named it like this was so that it would be easier for me to input instructions on the go. '`resetDriveSensors`' is a boolean variable, that once is set to true, will reset all the IMEs and IMUs so that you can achieve a new movement from that pose. I will warn you to avoid using `resetDriveSensors` when possible and simply learn how to link movements by connecting the lines of code together, and adjusting the `task::sleep();` values. You can also make a function for to do that or something. Let's take a look at an example of how to do movements: 
 
-dd
+    deploy(); //function is located in functions.cpp, expands the robot past 18 inch size limit featuring intake, hood, and backboard
+    task::sleep(500); //the robot is given 500 milliseconds to do complete this task 
+  
+    spinUp(true); //spins the intake and bottom roller
+    dV=7; // robot moves forward 7 units 
+    dTV=75; // while turning 75 degrees to the right at the mid point of those 7 units
+    task::sleep(2250); // the robot is given 2250 milliseconds to complete this task
+    resetDriveSensors = true; //this sets all the IMU and IME values to 0
+
+    spinUp(false);
+    dV=1.2; //moves forward 1.2 units
+    dTV=0;
+    task::sleep(1250); // the robot is given 1250 milliseconds to complete the task. 
+
+To adjust the intensity of certain movements we would use speedCap and adjust kP and kD for certain standards of aggression for our drive. 
 
 ### ii. Tips in developing autonomous routines (KISS, Keep it simple, stupid)
 Make movements simple as possible. Make it fast. Make it reasonable. Why go in a curve when you just drive in a straight line? More crazier movements mean more crazier readings from your IMU and IMEs (aka this is called noise). There is a lack of kalman filtering on this system, and you're gonna have to be careful. 
@@ -60,4 +74,4 @@ You can also alternatively switch to another coding library like EZ-Template or 
 
 ## Conclusion 
 
-This code was the start to most of the programming I do. I want to note that most of this robot was mostly mechanical developments and learning how to become a better driver throughout time. 
+This code was the start to most of the programming I do. I want to note that most of this robot was mostly mechanical developments and learning how to become a better driver throughout time. Things such as the big red and blue wheel was cool. The unique geometric structure and design was pretty cool as well. 
