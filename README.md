@@ -44,24 +44,7 @@ If you go to the autonomous function of the code, you may notice that I turn "on
 ### i. How to use this code
 '`dV`' and '`dTV`' are short for "desiredValue" and "desiredTurnValue" respectively. The reason why I named it like this was so that it would be easier for me to input instructions on the go. '`resetDriveSensors`' is a boolean variable, that once is set to true, will reset all the IMEs and IMUs so that you can achieve a new movement from that pose. I will warn you to avoid using `resetDriveSensors` when possible and simply learn how to link movements by connecting the lines of code together, and adjusting the `task::sleep();` values. You can also make a function for to do that or something. Let's take a look at an example of how to do movements: 
 
-      kP = 0.124; // adjust kP value for aggression
-    //while going forward open the wings to release preload, additionally intake is spinning
-    spinUp(true); //this function SPINS the intake
-    wings.open(); // this one OPENS the pneumatic wings that are on both sides of the robot
-    task::sleep(400); // the robot is given 400 milliseconds to complete this task before moving onto the next one.
-    dV = 5.2; // the robot will move 5.2 cubits forward 
-    dTV = -48; // AND the robot turns left while going forward
-    wings.close(); // this one CLOSES the pneumatic wings that are on both sides of the robot
-    task::sleep(1600); // the robot is given 1600 milliseconds (1.6 seconds) to complete this task before moving onto the next one
-    spinUp(false); // the robot stops spinning the intake 
-
-    kP = 0.118; //decrease kP value for accuracy and reducing oscillation. 
-    //turn right to align with goal, swipe to avoid touching middle pipe 
-    dV = 5.0; // the robot backs up 0.2 cubits, because previously dV was 5.2 and now it's 5.0. Thus 5.2-5.0 = 0.2  
-    dTV = 90; // the robot turs 138 degrees to the right b/c it has a pose angle of -48 previously, and now it's 90. 90 - (-48) = 138.
-    task::sleep(800); // the robot is given 800 milliseconds to COMPLETE this turn
-
-This represents the most raw form of control and it often is kind of hard to think about, but once you get the gist of it, you can code super advanced movements without requiring advanced odom or pure pursuit systems. Given that those systems are probably better, but this code presents a challenge to be independent and develop my own solutions to coding. 
+dd
 
 ### ii. Tips in developing autonomous routines (KISS, Keep it simple, stupid)
 Make movements simple as possible. Make it fast. Make it reasonable. Why go in a curve when you just drive in a straight line? More crazier movements mean more crazier readings from your IMU and IMEs (aka this is called noise). There is a lack of kalman filtering on this system, and you're gonna have to be careful. 
@@ -77,5 +60,4 @@ You can also alternatively switch to another coding library like EZ-Template or 
 
 ## Conclusion 
 
-This code is very simple. But it takes the right programmer to configure this code to your own. I shared this to others so that they could know how stupidly dumb this code is and how it brought my team's successes in a increasingly competitive region. You don't need a whole lot widgets to be good. You just need to get the perfect the basics. 
-
+This code was the start to most of the programming I do. I want to note that most of this robot was mostly mechanical developments and learning how to become a better driver throughout time. 
