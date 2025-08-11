@@ -6,8 +6,6 @@ using namespace vex;
 
 //Arcade Drive in usercontrol
 
-//void kick_Key_Off_The_Team(int weebRate, int amogus, int femboyNegater){}
-
 void joystickControl()
 {
   int X,Y;
@@ -112,4 +110,5 @@ void indexSystem(){
   if(Controller1.ButtonLeft.pressing()){
     fly.spin(reverse, 12, volt); 
   }
+
 }
